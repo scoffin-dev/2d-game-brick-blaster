@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Brick Blaster 2.0!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Kalam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+</head>
+<body>
+
+    <div id="arcade-game">
+
+        <h1>BRICK BLASTER!</h1>
+
+        <div id="canvas-frame" style="border:1px solid black">
+        
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+
+        </div>
+
+        </br>
+
+        <div id="game-options">
+            <p id="select-game-difficulty-label">SELECT DIFFICULTY:</p>
+            <select id="select-game-difficulty">
+                <option value="0">Choose</option>
+                <option value="1">Noobie</option>
+                <option value="2">Advanced</option>
+                <option value="3">Master</option>
+            </select>
+            <input type="button" id="start-and-stop-button" class="button control-button start" value="Start">
+            </br>
+            <input type="button" id="view-rules-button" class="button" value="View Game Rules">
+            </br></br>
+            <p>&copy; scoffin-dev</p>
+        </div>
+
+        <div id="game-rules">
+            
+            </br>
+            <div id="rules">
+                <p id="rules-label">GAME RULES</p>
+                <ul>
+                    <li>Move the paddle using left & right arrow keys.</li>
+                    <li>Hitting the floor restarts you at center if you have more lives.</li>
+                    <li>Destroy a brick: +1 point</li>
+                    <li>Hit the floor: -1 life</li>
+                    <li>Destroy all bricks to win the game.</li>
+                    <li>Lose all lives to lose the game.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
